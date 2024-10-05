@@ -82,6 +82,7 @@ main {
   width: 100%;
 }
 
+git config --global --unset pull.rebase
 
 .home-page {
   display: flex;
