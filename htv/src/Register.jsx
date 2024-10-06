@@ -7,7 +7,7 @@ function SignUpPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic for handling signup or login
+    
     console.log('Sign up with:', email, password);
   };
 
