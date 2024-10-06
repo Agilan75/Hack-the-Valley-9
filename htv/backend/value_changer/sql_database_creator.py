@@ -1,11 +1,12 @@
 import sqlite3
 
 def create_db():
-    conn = sqlite3.connect('user_database.db')
+    conn = sqlite3.connect('backend/user_database.db')
     cursor = conn.cursor()
 
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS user_data (
+            email TEXT NOT NULL,
             username TEXT NOT NULL,
             password TEXT NOT NULL,
             account_date TEXT NOT NULL,
